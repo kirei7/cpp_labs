@@ -1,6 +1,7 @@
 #include <string>
 
 typedef struct SortResult {
-    long time;
+    double timeWinner;
+    double timeLoser;
     std::string threadName;
 }SortResult;

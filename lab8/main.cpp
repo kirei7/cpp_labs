@@ -1,5 +1,5 @@
 #include <iostream>
-#include "data/SortResult.h"
+#include <time.h>
 #include "Sorter.cpp"
 
 using namespace std;
@@ -11,15 +11,15 @@ void displayResult(SortResult result);
 
 int main() {
 
-    static const int ARRAY_SIZE = 20;
+    static const int ARRAY_SIZE = 2000;
 
     srand (time(NULL));
 
     float* array1 = createRandomArray(ARRAY_SIZE);
     float* array2 = createRandomArray(ARRAY_SIZE);
 
-    displayArray(array1, ARRAY_SIZE);
-    displayArray(array2, ARRAY_SIZE);
+    /*displayArray(array1, ARRAY_SIZE);
+    displayArray(array2, ARRAY_SIZE);*/
 
     Sorter sorter;
     SortResult result = sorter.sort(array1, array2, ARRAY_SIZE);
@@ -46,5 +46,6 @@ void displayArray(float* array, int size) {
     cout<<"]"<<endl;
 }
 void displayResult(SortResult result) {
-    cout<<"The winner is: '"<<result.threadName<<"' with time "<<result.time<<endl;
+    cout<<"The winner is: '"<<result.threadName<<"' with time "<<result.timeWinner<<endl;
+    cout<<"Looser time "<<result.timeLoser<<endl;
 }
