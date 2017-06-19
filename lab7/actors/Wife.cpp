@@ -7,10 +7,10 @@ class Wife {
 public:
     Wife() {
         husband = Husband::getInstance();
-
+        
         productsToBuy.push_back("Sony");
         productsToBuy.push_back("Bread");
-        productsToBuy.push_back("Lenovo");
+        productsToBuy.push_back("Milk");
         productsToBuy.push_back("Onion");
 
     }

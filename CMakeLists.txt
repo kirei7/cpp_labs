@@ -10,6 +10,6 @@ set(SOURCE_FILES8 lab8/main.cpp lab8/data/SortResult.h lab8/Sorter.cpp lab8/Bubb
 add_executable(lab8 ${SOURCE_FILES8} lab8/main.cpp)
 
 set(SOURCE_FILES9 lab9/main.cpp)
-add_executable(lab9 ${SOURCE_FILES8} lab9/main.cpp)
+add_executable(lab9 ${SOURCE_FILES9} lab9/main.cpp)
 
 

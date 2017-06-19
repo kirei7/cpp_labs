@@ -11,15 +11,12 @@ void displayResult(SortResult result);
 
 int main() {
 
-    static const int ARRAY_SIZE = 2000;
+    static const int ARRAY_SIZE = 5000;
 
     srand (time(NULL));
 
     float* array1 = createRandomArray(ARRAY_SIZE);
     float* array2 = createRandomArray(ARRAY_SIZE);
-
-    /*displayArray(array1, ARRAY_SIZE);
-    displayArray(array2, ARRAY_SIZE);*/
 
     Sorter sorter;
     SortResult result = sorter.sort(array1, array2, ARRAY_SIZE);

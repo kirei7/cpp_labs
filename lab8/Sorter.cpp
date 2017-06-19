@@ -94,7 +94,7 @@ private:
 
         BubbleSort::sort(array, size);
 
-        duration = ( std::clock() - start ) / (double) CLOCKS_PER_SEC;
+        duration = ( std::clock() - start );
 
         sortData->timeDuration = duration;
         return 0;
